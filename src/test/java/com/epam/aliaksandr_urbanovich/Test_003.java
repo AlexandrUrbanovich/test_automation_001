@@ -21,8 +21,10 @@ public class Test_003 {
     @Test
     public void test_003() {
         driver.get("https://www.tut.by/");
+        WebElement button = driver.findElement(By.xpath("//div[@class='search-controls']//input[@name='search']"));
 
-        WebElement button = driver.findElement(By.xpath("//*[@id=\"search\"]/div/div[1]/input[2]"));
+
+        System.out.println("find button name " + button.getCssValue("//div[@class='search-controls']//input[@name='search']"));
         Assert.assertEquals(button.getText(), "");
     }
 

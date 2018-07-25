@@ -13,7 +13,6 @@ public class Test_001 {
 
     @BeforeTest
     public void setup() {
-//        System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }

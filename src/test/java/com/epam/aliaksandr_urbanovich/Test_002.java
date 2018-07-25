@@ -24,6 +24,7 @@ public class Test_002 {
         driver.get("https://www.tut.by/");
 
         WebElement resource = driver.findElement(By.xpath("//*[@id=\"search_from_str\"]"));
+        System.out.println("menu " + resource.getText());
         Assert.assertEquals(resource.getText(), "");
     }
 
