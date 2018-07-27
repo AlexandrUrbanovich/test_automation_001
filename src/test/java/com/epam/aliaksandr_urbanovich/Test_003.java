@@ -24,8 +24,8 @@ public class Test_003 {
         WebElement button = driver.findElement(By.xpath("//div[@class='search-controls']//input[@name='search']"));
 
 
-        System.out.println("find button name " + button.getCssValue("//div[@class='search-controls']//input[@name='search']"));
-        Assert.assertEquals(button.getText(), "");
+        System.out.println("find button name " + button.getAttribute("value"));
+        Assert.assertEquals(button.getAttribute("value"), "Найти");
     }
 
     @AfterClass
